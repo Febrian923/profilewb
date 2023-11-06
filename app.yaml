@@ -1,4 +1,4 @@
-runtime: python39 # or another supported version
+runtime: Node.js v18.18.0 # or another supported version
 
 instance_class: F2
 
