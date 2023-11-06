@@ -1,4 +1,4 @@
-runtime: Node.js v18.18.0 # or another supported version
+runtime: nodejs18 # Atur sesuai dengan versi Node.js yang sesuai dengan aplikasi Anda
 
 instance_class: F2
 
@@ -7,12 +7,12 @@ env_variables:
 
 handlers:
 - url: /
-  static_files: /index.html
-  upload: /index.html
+  static_files: static/index.html
+  upload: static/index.html
 
-  - url: /
-  static_files: /style.css
-  upload: /style.css
+- url: /style.css
+  static_files: static/style.css
+  upload: static/style.css
 
 - url: /image
   static_dir: static/image
